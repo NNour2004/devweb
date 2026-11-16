@@ -4,23 +4,21 @@ import { UpdateAgenceDeVoyageDto } from './dto/update-agence-de-voyage.dto';
 
 @Injectable()
 export class AgenceDeVoyagesService {
+  private tripe=[{id:1,nom:'to china',price:9000},{id:2,nom:'to Morocco',price:4000}];
+
   create(createAgenceDeVoyageDto: CreateAgenceDeVoyageDto) {
     return 'This action adds a new agenceDeVoyage';
   }
 
   findAll() {
-    return `This action returns all agenceDeVoyages`;
+    return "this agence de voyage";
+    
   }
 
   findOne(id: number) {
     return `This action returns a #${id} agenceDeVoyage`;
   }
 
-  update(id: number, updateAgenceDeVoyageDto: UpdateAgenceDeVoyageDto) {
-    return `This action updates a #${id} agenceDeVoyage`;
-  }
-
-  remove(id: number) {
-    return `This action removes a #${id} agenceDeVoyage`;
-  }
+  
+  
 }

@@ -1,1 +1,4 @@
-export class AgenceDeVoyage {}
+export class AgenceDeVoyage {
+    private nom: string;
+    private price: number;
+}

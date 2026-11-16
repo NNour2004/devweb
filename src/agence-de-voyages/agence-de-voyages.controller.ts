@@ -22,13 +22,7 @@ export class AgenceDeVoyagesController {
     return this.agenceDeVoyagesService.findOne(+id);
   }
 
-  @Patch(':id')
-  update(@Param('id') id: string, @Body() updateAgenceDeVoyageDto: UpdateAgenceDeVoyageDto) {
-    return this.agenceDeVoyagesService.update(+id, updateAgenceDeVoyageDto);
-  }
+  
 
-  @Delete(':id')
-  remove(@Param('id') id: string) {
-    return this.agenceDeVoyagesService.remove(+id);
-  }
+ 
 }
